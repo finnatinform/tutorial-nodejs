@@ -1,15 +1,5 @@
-# Lesson 01: Hello World
-## Projekt aufsetzen
-Als erstes erstellen wir uns ein neues NPM Projekt und installieren die library express.
-```
-npm init
-npm install --save-dev webpack
-npm install --save-dev typescript
-npm install --save-dev awesome-typescript-loader source-map-loader
-npm install --save express @types/express
-```
-## Hello World
-Jetzt legen wir uns einen src Ordner an und erstellen darin eine neue Datei server.ts
-
-## Static Files
-Mit express können wir auch statische Dateien herausgeben.
+# Lesson 02: Routes
+## Idee einer Rest API
+Die Idee einer Rest API ist eigentlich verschieden Daten/Funktionen unter verschiedenen URLs bereit zustellen.
+Um den Quellcode dafür ein bisschen zu vereinfachen/übersichtlicher zu gestalten kann man so genannte Routen verwenden.
+Diese legen die URL fest, auf die man nun verschiedene Requestarten abfragen kann.

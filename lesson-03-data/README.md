@@ -1,15 +1,7 @@
-# Lesson 01: Hello World
-## Projekt aufsetzen
-Als erstes erstellen wir uns ein neues NPM Projekt und installieren die library express.
-```
-npm init
-npm install --save-dev webpack
-npm install --save-dev typescript
-npm install --save-dev awesome-typescript-loader source-map-loader
-npm install --save express @types/express
-```
-## Hello World
-Jetzt legen wir uns einen src Ordner an und erstellen darin eine neue Datei server.ts
+# Lesson 03: Data
+## Daten senden
+Ein Server sollte nicht nur Daten liefern, sondern auch annehmen können.
+Übertragen tut man Daten im Body einer Request, üblicherweise in einer POST, PUT oder DELETE Transaktion.
 
-## Static Files
-Mit express können wir auch statische Dateien herausgeben.
+Mit dem geeigneten Import (Bodyparser, siehe use Anweisung) kann man direkt auf den body zugreifen.
+Diese können dann beliebig verarbeitet und die Nachricht beantwortet werden.

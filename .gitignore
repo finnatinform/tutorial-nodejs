@@ -1,4 +1,4 @@
 node_modules/
 index/
-dist/*
-!dist/static
+dist/
+!dist/static/
