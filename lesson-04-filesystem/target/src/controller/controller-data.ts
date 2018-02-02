@@ -8,10 +8,10 @@ class DataControllerClass {
     }
 
     public onPostData(_Request: Express.Request, _Response: Express.Response):void{
-        _Response.end(JSON.stringify({ 'success' : this.saveData(_Request.body) }));
+        this.saveData( _Request.body ).then(( _Result : boolean ) =>{ _Response.end( JSON.stringify({ 'success' :_Result })); });
     }
     public onGetData(_Request: Express.Request, _Response: Express.Response):void{
-        _Response.end( `Hey, ${this.loadData()} :)` );
+        this.loadData().then(( _Result : string ) =>{ _Response.end( `Hey, ${_Result} :)` ); });
     }
 
     private async saveData( _Data : any ):Promise<boolean>{
